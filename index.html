@@ -1100,18 +1100,21 @@
     <title>Meneruskan Pendaftaran - English Project</title>
     <style>
         *{box-sizing:border-box}
-        body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;
-             font-family:Nunito,Arial,sans-serif;background:#FAF7F2;color:#2A363B}
-        .card{width:min(100%,520px);padding:42px 30px;text-align:center;background:#fff;
-              border:2px solid #E88D37;border-radius:28px;box-shadow:0 18px 45px rgba(42,54,59,.13)}
-        .icon{width:76px;height:76px;margin:0 auto 22px;border-radius:50%;display:grid;place-items:center;
-              background:#F3EDE2;color:#E88D37;font-size:34px}
-        h1{margin:0 0 12px;font-size:clamp(23px,5vw,30px);line-height:1.2;font-weight:900}
-        p{margin:0;color:#64748b;font-size:15px;line-height:1.7;font-weight:700}
-        .loader{height:7px;width:min(100%,300px);margin:26px auto 0;border-radius:99px;background:#F3EDE2;overflow:hidden}
+        html{width:100%;min-height:100%;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+        body{margin:0;width:100%;min-height:100vh;min-height:100dvh;display:flex;align-items:center;justify-content:center;
+             padding:20px;font-family:Nunito,Arial,sans-serif;background:#FAF7F2;color:#2A363B}
+        .card{display:block;width:100%;max-width:520px;margin:0 auto;padding:clamp(24px,6vw,42px) clamp(18px,5vw,30px);
+              text-align:center;background:#fff;border:2px solid #E88D37;border-radius:24px;
+              box-shadow:0 18px 45px rgba(42,54,59,.13)}
+        .icon{width:64px;height:64px;margin:0 auto 18px;border-radius:50%;display:grid;place-items:center;
+              background:#F3EDE2;color:#E88D37;font-size:30px}
+        h1{margin:0 0 12px;font-size:clamp(22px,6vw,30px);line-height:1.25;font-weight:900}
+        p{margin:0;color:#64748b;font-size:clamp(14px,3.8vw,16px);line-height:1.65;font-weight:700}
+        .loader{height:7px;width:100%;max-width:300px;margin:24px auto 0;border-radius:99px;background:#F3EDE2;overflow:hidden}
         .loader span{display:block;height:100%;width:40%;border-radius:99px;background:#E88D37;animation:loading 1s ease-in-out infinite alternate}
-        .small{margin-top:18px;font-size:12px;color:#94a3b8}
+        .small{margin-top:16px;font-size:12px;color:#94a3b8}
         @keyframes loading{from{transform:translateX(-5%)}to{transform:translateX(155%)}}
+        @media(max-width:360px){body{padding:14px}.card{padding:24px 16px}}
         @media(prefers-reduced-motion:reduce){.loader span{animation:none;width:100%}}
     </style>
 </head>
